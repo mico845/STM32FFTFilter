@@ -24,7 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef96d21-9d68-4acf-9e49-478c3e1fc550" name="Changes" comment="first commit!" />
+    <list default="true" id="1ef96d21-9d68-4acf-9e49-478c3e1fc550" name="Changes" comment="add vcs.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,8 +42,8 @@
     </option>
     <option name="PUSH_TAGS">
       <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,6 +55,12 @@
     &quot;assignee&quot;: &quot;mico845&quot;
   }
 }</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mico845/STM32FFTFilter.git",
+    "accountId": "f41f074a-3174-4dc4-9956-81b29f8c3ce7"
+  }
+}]]></component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
@@ -72,6 +78,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "CMake Application.Project.elf.executor": "Run",
     "OpenOCD Download & Run.STLINK.executor": "Run",
     "OpenOCD Download & Run.Unnamed.executor": "Run",
@@ -79,6 +86,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
@@ -150,7 +158,7 @@
       <workItem from="1742223599036" duration="623000" />
       <workItem from="1742224243072" duration="592000" />
       <workItem from="1742628515956" duration="8154000" />
-      <workItem from="1742640547370" duration="15000" />
+      <workItem from="1742640547370" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <option name="closed" value="true" />
@@ -168,7 +176,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742640275206</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first commit!">
+      <option name="closed" value="true" />
+      <created>1742640640363</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1742640640364</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add vcs.xml">
+      <option name="closed" value="true" />
+      <created>1742640723976</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1742640723976</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +225,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="first commit!" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit!" />
+    <MESSAGE value="add vcs.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add vcs.xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
