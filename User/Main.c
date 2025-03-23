@@ -5,6 +5,7 @@
 _Noreturn void Main(void)
 {
     RetargetInit(&huart1);
+    spline_Init();
 
     HAL_ADCEx_Calibration_Start(&hadc1, ADC_CALIB_OFFSET_LINEARITY, ADC_SINGLE_ENDED);
     bsp_Adc_Start(&hadc1);

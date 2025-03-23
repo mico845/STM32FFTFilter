@@ -7,6 +7,7 @@ float32_t bufferB[DAC_DMA_BUF_NUM];
 volatile bool active_buffer = true;
 
 void smooth(uint16_t *data, uint16_t size);
+void spline(float32_t *input, float32_t *output);
 
 void signalTask(void)
 {
@@ -100,14 +101,15 @@ void process_fft_ifft(void)
 
         arm_cfft_f32(&s_arm_cfft_f32, fft_input, 1, 1);
 
-        uint16_t interpolated_output[DAC_DMA_BUF_NUM];
-        uint16_t interpolated_input[FFT_NUM];
+        float32_t interpolated_output[DAC_DMA_BUF_NUM];
+        float32_t interpolated_input[FFT_NUM];
 
         for (uint16_t i = 0; i < FFT_NUM; i++) {
             interpolated_input[i] = fft_input[2 * i];
         }
 
-        lerp(interpolated_input, interpolated_output, FFT_NUM, DAC_DMA_BUF_NUM);
+        // lerp(interpolated_input, interpolated_output, FFT_NUM, DAC_DMA_BUF_NUM);
+        spline(interpolated_input, interpolated_output);
 
         for (uint16_t i = 0; i < DAC_DMA_BUF_NUM; i++) {
             processing_buffer[i] = interpolated_output[i];
@@ -117,7 +119,7 @@ void process_fft_ifft(void)
 #if DEBUG_FFT
         if (debug_times == 5)
         {
-            Debug_u16(interpolated_output, DAC_DMA_BUF_NUM);
+            Debug_f32(interpolated_output, DAC_DMA_BUF_NUM);
             debug_times = 99;
         }
         else if (debug_times <= 11)
@@ -151,6 +153,43 @@ void lerp(uint16_t *input, uint16_t *output, uint16_t input_size, uint16_t outpu
             output[i] = input[input_size - 1];
         }
     }
+}
+
+
+arm_spline_instance_f32 S;
+#define SpineTab DAC_DMA_BUF_NUM / FFT_NUM
+float32_t xn[FFT_NUM];
+float32_t xnpos[DAC_DMA_BUF_NUM];
+float32_t coeffs[3*(FFT_NUM - 1)]; /* 插补系数缓冲 */
+float32_t tempBuffer[2 * FFT_NUM - 1]; /* 插补临时缓冲 */
+
+void spline_Init(void)
+{
+    for(uint16_t i = 0; i < FFT_NUM; i++)
+    {
+        xn[i] = i*SpineTab;
+    }
+    for(uint16_t i = 0; i < DAC_DMA_BUF_NUM; i++)
+    {
+        xnpos[i] = i;
+    }
+}
+
+
+void spline(float32_t *input, float32_t *output)
+{
+    arm_spline_init_f32(&S,
+                        ARM_SPLINE_PARABOLIC_RUNOUT ,
+                        xn,
+                        input,
+                        FFT_NUM,
+                        coeffs,
+                        tempBuffer);
+/* 样条计算 */
+    arm_spline_f32 (&S,
+                    xnpos,
+                    output,
+                    DAC_DMA_BUF_NUM);
 }
 
 

@@ -3,7 +3,7 @@
 
 #include "bsp_stm32_hal.h"
 
-#define INTERP_FACTOR 2
+#define INTERP_FACTOR 100
 
 #define SAMPLERATE  ((100)*(12.8))
 #define DAC_FREQ    (SAMPLERATE * INTERP_FACTOR)
@@ -37,5 +37,6 @@ extern uint32_t       adc_dma_buffer[ADC_DMA_BUF_NUM];
 void signalTask(void);
 void process_fft_ifft(void);
 void lerp(uint16_t *input, uint16_t *output, uint16_t input_size, uint16_t output_size);
+void spline_Init(void);
 
 #endif //PROJECT_SEPARATION_H

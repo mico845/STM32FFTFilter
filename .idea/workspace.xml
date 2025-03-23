@@ -26,11 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1ef96d21-9d68-4acf-9e49-478c3e1fc550" name="Changes" comment="平均插值">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/dac.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/dac.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/Project.ioc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignalSeparation/separation.c" beforeDir="false" afterPath="$PROJECT_DIR$/SignalSeparation/separation.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SignalSeparation/separation.h" beforeDir="false" afterPath="$PROJECT_DIR$/SignalSeparation/separation.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User/Main.c" beforeDir="false" afterPath="$PROJECT_DIR$/User/Main.c" afterDir="false" />
@@ -105,7 +100,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "lerp",
     "last_opened_file_path": "E:/Project/STM32/H743VIT6/STM32FFTFilter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -177,7 +172,7 @@
       <workItem from="1742224243072" duration="592000" />
       <workItem from="1742628515956" duration="8154000" />
       <workItem from="1742640547370" duration="975000" />
-      <workItem from="1742703175427" duration="10471000" />
+      <workItem from="1742703175427" duration="13764000" />
     </task>
     <task id="LOCAL-00001" summary="first commit!">
       <option name="closed" value="true" />
@@ -235,7 +230,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742703461811</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="平均插值">
+      <option name="closed" value="true" />
+      <created>1742721226614</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742721226614</updated>
+    </task>
+    <task id="LOCAL-00009" summary="平均插值">
+      <option name="closed" value="true" />
+      <created>1742721302259</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1742721302259</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +258,21 @@
     <isAutomaticReloadCMake value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -255,6 +281,17 @@
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
                 </map>
               </option>
             </State>
@@ -270,6 +307,7 @@
     <MESSAGE value="first commit!" />
     <MESSAGE value="add vcs.xml" />
     <MESSAGE value="first commit" />
+    <MESSAGE value="线性插值" />
     <MESSAGE value="平均插值" />
     <option name="LAST_COMMIT_MESSAGE" value="平均插值" />
   </component>
