@@ -111,6 +111,7 @@ int main(void)
   MX_TIM1_Init();
   MX_DAC1_Init();
   MX_OPAMP1_Init();
+  MX_TIM8_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
