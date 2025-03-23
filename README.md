@@ -246,8 +246,6 @@ for (uint16_t i = cutoff_bin; i < FFT_NUM/2; i++) {
 此外，FFT 频域滤波更适合用于选取特定频率分量的滤波器。在实际应用中，我们通常希望滤波器具有一定的过渡带，而不是突变的截止频率。这是因为理想的 “砖墙” 低通滤波器（即瞬间截止所有高频分量）在物理上不可实现，实际滤波器通常需要一定的过渡区域，以减少时域上的振铃效应并改善信号的平滑性。
 
 
-**项目地址：** [https://github.com/mico845/STM32FFTFilter](https://github.com/mico845/STM32FFTFilter)
-
 
 # 五、项目联想与扩展
 ## 1. 倍频
@@ -638,3 +636,7 @@ void spline(float32_t *input, float32_t *output)
 ```
 ![12800点插值](https://i-blog.csdnimg.cn/direct/fb895523dcc04d14a04e7650b23caceb.jpeg#pic_center)
 也就相当光滑了。这样同时也提高了DA的采样频率，后续想要制作LPF已经相当容易了。
+
+
+
+**项目地址：** [https://github.com/mico845/STM32FFTFilter](https://github.com/mico845/STM32FFTFilter)
