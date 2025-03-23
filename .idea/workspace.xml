@@ -24,12 +24,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ef96d21-9d68-4acf-9e49-478c3e1fc550" name="Changes" comment="平均插值">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignalSeparation/separation.c" beforeDir="false" afterPath="$PROJECT_DIR$/SignalSeparation/separation.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SignalSeparation/separation.h" beforeDir="false" afterPath="$PROJECT_DIR$/SignalSeparation/separation.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User/Main.c" beforeDir="false" afterPath="$PROJECT_DIR$/User/Main.c" afterDir="false" />
-    </list>
+    <list default="true" id="1ef96d21-9d68-4acf-9e49-478c3e1fc550" name="Changes" comment="样条插值" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +95,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "lerp",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/Project/STM32/H743VIT6/STM32FFTFilter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -246,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742721302259</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="样条插值">
+      <option name="closed" value="true" />
+      <created>1742739164494</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1742739164494</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +312,8 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="线性插值" />
     <MESSAGE value="平均插值" />
-    <option name="LAST_COMMIT_MESSAGE" value="平均插值" />
+    <MESSAGE value="样条插值" />
+    <option name="LAST_COMMIT_MESSAGE" value="样条插值" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
